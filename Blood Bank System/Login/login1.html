@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+						initial-scale=1.0" />
+    <title>Blood bank System</title>
+    <link rel="stylesheet" href="login1.css" />
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Blood Bank System</h1>
+    </header>
+    <div class="menubar">
+      <div class="topnav" id="myTopnav">
+        <a href="../index.php">Home</a>
+        <a href="../news.html">News</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn" class="active">
+            Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../registration/hospital.html" class="active"
+              >Hospital Registration</a
+            >
+            <a href="../registration/receiver.html">Receiver Registration</a>
+          </div>
+        </div>
+        <a href="../Login/login1.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="title">Login Here</h2>
+      <!-- upper button section to select
+             the login or signup form -->
+      <div class="slider"></div>
+      <div class="btn">
+        <button class="hospital">Hospital</button>
+        <button class="receiver">Receiver</button>
+      </div>
+
+      <!-- Form section that contains the
+             login and the signup form -->
+      <div class="form-section">
+        <!-- login form -->
+        <form action="../API/hospital_login.php" method="post">
+          <div class="hospital-box">
+            <input
+              type="email"
+              class="email ele"
+              name="email"
+              id="email"
+              placeholder="youremail@email.com" />
+            <input
+              type="password"
+              class="password ele"
+              name="password"
+              id="password"
+              placeholder="password" />
+            <div>
+              <input type="checkbox" id="checkbox" name="agree" required />
+              <label class="checkbox-label" for="checkbox"
+                >I agree to the terms and conditions</label
+              >
+            </div>
+            <button class="clkbtn">Login</button>
+            <p>
+              Not Registered yet?
+              <a href="../registration/hospital.html">Register here</a>
+            </p>
+          </div>
+        </form>
+
+        <!-- signup form -->
+        <form action="../API/receiver_login1.php" method="post">
+          <div class="receiver-box">
+            <input
+              type="text"
+              class="name ele"
+              name="mobile"
+              id="mobile"
+              placeholder="Mob no." />
+            <input
+              type="password"
+              class="password ele"
+              name="password"
+              id="password"
+              placeholder="password" />
+            <div>
+              <input type="checkbox" id="checkbox" name="agree" required />
+              <label class="checkbox-label" for="checkbox">I agree to the terms and conditions</label>
+            </div>
+            <button class="clkbtn">Login</button>
+            <p>
+              Not Registered Yet?
+              <a href="../registration/receiver.html">Register here</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="login1.js"></script>
+  </body>
+</html>

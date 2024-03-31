@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Blood Bank</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin: 30px;
+        color: #bf0a30;
+      }
+      form {
+        margin-top: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        background-color: #bf0a30;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: #8c0825;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Blood Bank System</h1>
+    </header>
+    <div class="menubar">
+      <div class="topnav" id="myTopnav">
+        <a href="index.php">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="registration/hospital.html">Hospital Registration</a>
+            <a href="registration/receiver.html">Receiver Registration</a>
+          </div>
+        </div>
+        <a href="Login/login1.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email" required />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

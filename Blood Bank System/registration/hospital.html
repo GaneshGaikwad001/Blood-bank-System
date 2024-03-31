@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Blood Bank System</h1>
+    </header>
+    <div class="menubar">
+      <div class="topnav" id="myTopnav">
+        <a href="../index.php">Home</a>
+        <a href="../news.html">News</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn" class="active">
+            Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="hospital.html" class="active">Hospital Registration</a>
+            <a href="receiver.html">Receiver Registration</a>
+          </div>
+        </div>
+        <a href="../Login/login1.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h2>Hospital Registration</h2>
+      <form
+        action="../API/hospital_registration.php"
+        method="post"
+        enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="hospitalName">Hospital Name:</label>
+          <input type="text" id="hospitalName" name="hospitalName" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="Cpassword">Confirmed Password:</label>
+          <input type="password" id="Cpassword" name="Cpassword" required />
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox" name="agree" required />
+          <label class="checkbox-label" for="checkbox"
+            >I agree to the terms and conditions</label
+          >
+        </div>
+        <button type="submit">Register</button>
+        <p>
+          Already have an account? <a href="../Login/login1.html">Login here</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
